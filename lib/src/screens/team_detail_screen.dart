@@ -27,6 +27,7 @@ class _TeamDetailScreenState extends State<TeamDetailScreen> {
     return Scaffold(
         appBar: AppBar(
           elevation: 20.0,
+          // app bar header
           title: Container(
             child: Row(
               children: <Widget>[
@@ -50,13 +51,18 @@ class _TeamDetailScreenState extends State<TeamDetailScreen> {
           ),
           centerTitle: true,
         ),
+        // result screen
         body: BlocBuilder<TeamDetailBloc, TeamDetailBlocState>(
             builder: (context, state) {
+          // loading state
           if (state is LoadingTeamDetailState) {
             return LoadingIndicator();
-          } else if (state is ErrorTeamDetailState) {
+          }
+          // error state
+          if (state is ErrorTeamDetailState) {
             return Container(child: Text(state.error));
           }
+          // loaded teamdetail state
           return TeamDetailResult(state: state, logo: widget.logo);
         }));
   }

@@ -23,9 +23,13 @@ class _ScrollHeaderState extends State<ScrollHeader> {
     //
     return Container(
       decoration: BoxDecoration(
-        border: Border(bottom: BorderSide(width: 0.3)),
-      ),
-      height: MediaQuery.of(context).size.height * 0.2,
+          border: Border(bottom: BorderSide(width: 0.2)),
+          color: Colors.white,
+          boxShadow: <BoxShadow>[
+            BoxShadow(
+                offset: Offset(0, 5.0), blurRadius: 3.0, color: Colors.grey)
+          ]),
+      height: MediaQuery.of(context).size.height * 0.25,
       width: MediaQuery.of(context).size.width,
       child: ListView.builder(
           scrollDirection: Axis.horizontal,
