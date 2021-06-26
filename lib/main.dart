@@ -3,10 +3,12 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:footScore/src/features/blocs/team_detail_bloc/team_detail_bloc.dart';
 import 'package:footScore/src/features/blocs/teams_bloc/teams_bloc.dart';
 import 'package:footScore/src/screens/home_screen.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart' as DotEnv;
 import 'service_locatior.dart' as di;
 
-void main() {
+Future main() async {
   di.init();
+  await DotEnv.load(fileName: ".env");
   runApp(MyApp());
 }
 
