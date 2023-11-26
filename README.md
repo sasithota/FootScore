@@ -1,16 +1,44 @@
-# footScore
+# FootScore
 
-A new Flutter project.
+FootScore, a Flutter mobile application, delivering real-time football scores and team lineups. Seamlessly integrating with external APIs, it keeps you updated with the latest match action and squad details, bringing the excitement of live football directly to your fingertips. ⚽📱
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- **Live Football Scores:** Get real-time updates on ongoing football matches.
+- **Team Lineups:** Explore detailed squad information for each team.
 
-A few resources to get you started if this is your first Flutter project:
+## Tech Stack
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- **Flutter:** Building cross-platform mobile apps.
+- **External APIs:** Utilizes external APIs for live football data.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Project Setup
+
+Follow these steps to set up and run the project locally:
+
+### Prerequisites
+
+- [Flutter](https://flutter.dev/) installed on your machine.
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/sasithota/StoryShare.git
+   ```
+2. Navigate to the project directory:
+
+   ```bash
+   cd StoryShare
+   ```
+3. Install dependencies:
+
+   ```bash
+   flutter pub get
+   ```
+4. Run the app:
+
+   ```bash
+   flutter run
+   ```
